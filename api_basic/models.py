@@ -6,7 +6,6 @@ from django.db import models
 class Article(models.Model):
     title = models.CharField(max_length=100)
     author = models.CharField(max_length=50)
-    email = models.EmailField(unique=True, max_length=50)
     date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
