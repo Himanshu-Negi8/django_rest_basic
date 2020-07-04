@@ -22,6 +22,6 @@ from .models import Article
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields = ['id', 'author', 'title']
+        fields = '__all__'
 
 
